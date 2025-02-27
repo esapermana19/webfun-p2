@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffa12c;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0,0,0.1);
+}
+.login {
+    text-align: left;
+    font-weight: bold;
+    padding: 50px;
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}

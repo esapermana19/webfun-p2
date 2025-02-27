@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM INPUT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .borderContent{
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .titleform{
+            text-align: center;
+            font-weight: bold;
+            background-color: darkgray;
+            padding: 6px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .formContent{
+            padding: 10px;
+        }
+        .inputForm{
+            width: 250px;
+            height: 25px;
+            border-radius: 25px;
+            padding-left: 5px;
+        }
+        .save{
+            background-color: greenyellow;
+            padding: 5px;
+        }
+        .cancel {
+            background-color: red;
+            padding: 5px;
+        }
+        body {
+            font-family: 'poppins';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 100px;
+            background: #ffa12c;
+        }
+        .img {
+            width: 100%;
+            height: 10%;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- DIV adalah tag html yang berfungsi untuk mengelompokkan tag html yang lain  -->
+   
+
+     <div class="borderContent">
+        <div class="titleform">FORM INPUT BIODATA</div>
+        <div class="formContent">
+            <form action="succes.html">
+                <div style="margin-bottom: 10px;">
+                    <label for="name">Nama Lengkap</label><br>
+                    <input type="text" id="name" class="inputForm" name="name" placeholder="Masukkan Nama">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="tempatlahir">Tempat Lahir</label><br>
+                    <input type="text" id="tempatlahir" class="inputForm" name="tempatlahir" placeholder="Masukkan Tempat Lahir">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="tanggallahir">Tanggal Lahir</label><br>
+                    <input type="date" id="tanggallahir" class="inputForm" name="tanggallahir">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="jeniskelamin">Jenis Kelamin</label><br>
+                    <input type="radio" id="lakilaki" name="jeniskelamin" value="Laki-laki">Laki-laki
+                    <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">Perempuan<br> 
+                </div>
+                
+                <div style="margin-bottom: 10px;">
+                    <label for="agama">Agama</label><br>
+                    <select name="agama" class="inputForm" id="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="No.HP">No.HP</label><br>
+                    <input type="number" id="No.HP" class="inputForm" name="No.HP" placeholder="Masukkan No.HP">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="alamat">Alamat Lengkap</label><br>
+                    <textarea name="alamat" id="alamat" class="inputForm" placeholder="Masukkan Alamat Lengkap"></textarea>
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <button type="submit" class="save">SIMPAN</button>
+                    <button type="reset" class="cancel">BATAL</button>
+                </div>
+                
+            </form>
+        </div>
+     </div>
+    
+</body>
+</html>

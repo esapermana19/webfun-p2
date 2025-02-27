@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'poppins';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #ffa12c;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        max-width: 850px;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 10px 15px rgba(0,0,0.1);
+    }
+    .login {
+        text-align: left;
+        font-weight: bold;
+        padding: 50px;
+        border-radius: 25px;
+    }
+
+    form {
+        width: 250px;
+        margin: 60px auto;
+    }
+    
+    .save {
+        background-color: yellow;
+        padding: 5px;
+    }
+    .cancel {
+        background-color: red;
+        padding: 5px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="">
+                <div class="inputan">
+                    <h1>Login</h1>
+                    <hr>
+                    <!-- nama -->
+                    <label for="nama"></label>
+                    <input type="text" placeholder="Masukkan Nama"><br>
+                    <!-- NIM -->
+                    <label for="NIM"></label>
+                    <input type="number" id="NIM" name="NIM" placeholder="Masukkan NIM"><br>
+                    <!-- email -->
+                    <label for="email"></label>
+                    <input type="text" placeholder="Masukkan Email"><br>
+                    <!-- KELAS -->
+                    <label for="Kelas">Kelas</label><br>
+                        <select name="Kelas" id="Kelas">
+                            <option value="MI24">MI24</option>
+                            <option value="MP05">MP05</option>
+                            <option value="AB18">AB18</option>
+                            <option value="MKP05">MKP05</option>
+                            <option value="TO24">TO24</option>
+                        </select><br>
+                    <!-- JK -->
+                    <label for="jeniskelamin">Jenis Kelamin</label><br>
+                    <input type="radio" id="lakilaki" name="jeniskelamin" value="Laki-laki">Laki-laki
+                    <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">Perempuan<br>
+                    <!-- BUTTON -->
+                    <button type="submit" class="save">LOGIN</button>
+                    <button type="reset" class="cancel">CANCEL</button><br>
+                    <!-- creator -->
+                    <p style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; margin-top: 5px;">by esa Permana</p>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <img src="img/ORANGE_CAT__1_-removebg-preview.png" alt="no image">
+        </div>
+    </div>
+</body>
+</html>
